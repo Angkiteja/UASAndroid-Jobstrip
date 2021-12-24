@@ -13,16 +13,17 @@ import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
+    //membuat variable
     Context context;
-
     ArrayList<Pengguna> list;
 
-
+    //constructor
     public MyAdapter(Context context, ArrayList<Pengguna> list) {
         this.context = context;
         this.list = list;
     }
 
+    //membuat objek di class view
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -30,6 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return  new MyViewHolder(v);
     }
 
+    //membuat objek pengguna
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
@@ -47,10 +49,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public int getItemCount() {
-
         return list.size();
     }
 
+    //mendefinisikan textview di view holder
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         TextView namaLengkap,password, username, emailAddress,

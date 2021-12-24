@@ -17,11 +17,13 @@ import java.util.ArrayList;
 
 public class userlist extends AppCompatActivity {
 
+    //membuat reference variable
     RecyclerView recyclerView;
     DatabaseReference database;
     MyAdapter myAdapter;
     ArrayList<Pengguna> list;
 
+    //mengambil data dari firebase
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

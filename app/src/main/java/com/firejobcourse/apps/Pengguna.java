@@ -6,6 +6,7 @@ public class Pengguna {
     bio, noTelp, Linked;
 
     public String getNamaLengkap() {
+
         return namaLengkap;
     }
 
@@ -14,22 +15,27 @@ public class Pengguna {
     }
 
     public String getUsername() {
+
         return username;
     }
 
     public String getEmailAddress() {
+
         return emailAddress;
     }
 
     public String getBio() {
+
         return bio;
     }
 
     public String getNoTelp() {
+
         return noTelp;
     }
 
     public String getLinked() {
+
         return Linked;
     }
 }
